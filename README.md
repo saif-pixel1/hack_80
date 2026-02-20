@@ -1,30 +1,52 @@
-# 🧠 Code Commenter for Beginners
+🏠 Dream Room Visualizer
+An AI-powered interior design app built with Streamlit and Claude. Input your room dimensions and a style to get a detailed design concept — color palettes, furniture picks, materials, and pro tips.
 
-A beginner-friendly web app that explains confusing code by adding simple, plain English comments to every line.
+✨ Features
+12 built-in styles (Cyberpunk, Boho, Japandi, Art Deco, Dark Academia, Maximalist, and more)
+Custom style input
+Room type, dimensions, lighting mood, and camera angle controls
+AI-generated color palette with hex swatches
+Furniture list, materials, style elements, and designer tips
+Dark luxury UI with Google Fonts and animated layout
+🚀 Quick Start
+1. Clone / Download
+Place dream_room_visualizer.py, requirements.txt in the same folder.
 
----
+2. Install dependencies
+pip install -r requirements.txt
+3. Set your Anthropic API key
+export ANTHROPIC_API_KEY=sk-ant-...
+Or on Windows:
 
-## 🚀 Overview
+set ANTHROPIC_API_KEY=sk-ant-...
+4. Run the app
+streamlit run dream_room_visualizer.py
+Open http://localhost:8501 in your browser.
 
-Code Commenter for Beginners helps new programmers understand code by:
-
-- Breaking down each line
-- Adding easy explanations
-- Making code beginner-friendly
-- Helping students learn faster
-
-Just paste your code and click **Add Simple Comments**.
-
----
-
-## 🎯 Problem Statement
-
-Many beginners struggle with:
-
-- Understanding unfamiliar code
-- Reading complex logic
-- Learning programming syntax
-- Debugging confusion
+🗂️ Project Structure
+dream-room-visualizer/
+├── dream_room_visualizer.py   # Main Streamlit app
+├── requirements.txt           # Python dependencies
+└── README.md                  # This file
+🛠️ Tech Stack
+Tool	Purpose
+Streamlit	Web UI framework
+Anthropic Claude	AI design generation
+Google Fonts	Typography (Playfair Display + DM Sans)
+📋 How It Works
+User fills in room specs and picks a style
+App sends a structured prompt to claude-sonnet-4-20250514
+Claude returns a JSON design concept
+Streamlit renders swatches, cards, and spec bars from the JSON
+💡 Example Styles to Try
+Cyberpunk — neon accents, dark metals, LED strips
+Japandi — wabi-sabi minimalism, natural wood, muted tones
+Cottagecore — floral prints, vintage wood, soft pastels
+Dark Academia — rich mahogany, leather, candlelight
+🔑 Requirements
+Python 3.9+
+Anthropic API key (get one here)
+Internet connection (Google Fonts + Anthropic API)
 
 This tool simplifies code so anyone can understand what each line does.
 
